@@ -12,30 +12,35 @@ a) main.go - исполняемый файл "Hello World"
 I. Для исполнения бинарного "Hello World" файла необходимо:
 1) Перейти в директорию с исполняемым файлом main.go:
   
-
+    ```
     cd USER_DIR/SBT_GO_diving/binary_hello_world/main
+   ```
 2) Запустить исполняемый файл main.go:
 
-
+   ```
     go run main.go
-
+   ```
 II. Для работы с docker-сервисом необходимо:
 1) Перейти в директорию с файлами конфигурации Docker и исполняемым файлом main.go:
 
-
+   ```
     cd USER_DIR/SBT_GO_diving/docker_hello_world/main
+   ```
 2) Создать образ Docker с именем go-hello-world:
 
-
+   ```
     make build_docker
+   ```
 3) Проверить успешное создание данного образа:
 
-
+   ```
     make check_image_docker
+   ```
 4) Удалить данный образ:
 
-
+   ```
     make clean_up_docker
+   ```
 
 ### Требования к окружению
 1) Проверить конфигурацию SDK - GOVERSION
@@ -44,5 +49,6 @@ II. Для работы с docker-сервисом необходимо:
 
 Данную информацию можно найти с помощю комманды:
 
-
+   ```
     go env
+   ```
